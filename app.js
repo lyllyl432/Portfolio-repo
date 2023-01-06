@@ -22,10 +22,11 @@ window.addEventListener("scroll",()=>{
 })
 //Nav menu toggle
 bar.addEventListener("click", ()=>{
-  navMenu.classList.add("show_nav");
+  navMenu.classList.add("active");
+  
 })
 closeBar.addEventListener("click", ()=>{
-  navMenu.classList.remove("show_nav");
+  navMenu.classList.remove("active");
 })
 
 

@@ -27,8 +27,11 @@ img{
     display: block;
     width: 100%;
 }
+a{
+    text-decoration: none;
+}
 .container{
-    width: var(--container--sg);
+    width: var(--container--lg);
     margin: 0 auto;
     overflow: hidden;
 }
@@ -123,23 +126,44 @@ nav{
     justify-content: space-between;
     align-items: center;
 }
-#logo{
+#logo a{
     color: var(--color-white);
     text-shadow: 1px 1px 5px var(--color-black);
 }
+.menu_list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
 .menu_list a{
+    position: relative;
     color: var(--color-white);
     text-decoration: none;
     text-shadow: 1px 1px 5px var(--color-black);
 }
+.menu_list a:not(.btn):after{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background: var(--color-white);
+    transform: scaleX(0);
+    transition: transform 0.5s ease-in-out;
+    transform-origin: right;
+}
+.menu_list a:not(.btn):hover:after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
 nav.active{
     background: var(--color-bg-4);
     position: fixed;
     width: 100vw;
 }
-.menu_list.show_nav{
-    transform: translateX(0);
-}
+
 .menu_list a{
     font-size: 1.2rem;
 }
@@ -151,6 +175,10 @@ nav.active{
     color: var(--color-white);
     text-shadow: 1px 1px 5px var(--color-black);
 }
+#bar{
+    display: none;
+}
+
 /*-------------END NAVIGATION BAR------------*/
 
 /*-------------HEADER------------*/
@@ -267,7 +295,7 @@ header .contact_social a{
     place-content: center;
 }
 .services_card{
-    padding: 2rem;
+    padding: 1rem;
     background: var(--color-bg-3);
     margin-bottom: 1rem;
     min-height: 20rem;
@@ -584,30 +612,9 @@ form .btn:hover{
 /*-------------END CONTACT FORM------------*/
 /* Smartphones start somewhere around here */
 /* You might do landscape phones here if your content seems to need it */
-@media (min-width: 450px) {
-    #bar{
-        display: block;
-        position: relative;
-        right: 1rem;
-        font-size: 2rem;
-        color: var(--color-white);
-        text-shadow: 1px 1px 5px var(--color-black);
-    }
-    .menu_list{
-        position: fixed;
-        right: 0;
-        top: 0;
-        width: 20rem;
-        height: 100vh;
-        background: var(--color-bg-4);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        row-gap: 3rem;
-        transform: translateX(20rem);
-        transition: all 1s ease;
-        
+@media (min-width: 350px) {
+    .container{
+        width: var(--container--sg);
     }
     .content_title h1{
         font-size: 2.5rem;
@@ -715,6 +722,34 @@ form .btn:hover{
         place-items: center;
     }
 }
+@media (max-width:750px){
+    .menu_list{
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 15rem;
+        height: 100vh;
+        background: var(--color-bg-4);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 3rem;
+        transform: translateX(100%);
+    }
+    .menu_list.active{
+        transform: translateX(0);
+        transition: transform 1s ease; 
+    }
+    #bar{
+        display: block;
+        position: relative;
+        right: 1rem;
+        font-size: 2rem;
+        color: var(--color-white);
+        text-shadow: 1px 1px 5px var(--color-black);
+    }
+}
 @media (min-width: 750px) and (orientation: landscape){
     #myTeam{
         height: 120vh;
@@ -762,12 +797,13 @@ form .btn:hover{
     #close_bar{
         display: none;
     }
-    .menu_list{
+    /* .menu_list{
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 1rem;
-    }
+    } */
+    
 }
 @media (min-width: 900px) and (orientation: landscape) {
     #myTeam{

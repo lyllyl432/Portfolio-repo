@@ -1,252 +1,29 @@
-
-/* Smartphones start somewhere around here */
-    @media (min-width: 18.8em) {
-    header {
-        height: 100vh;
-        background: linear-gradient(var(--color-bg-1), var(--color-bg-3));
+@media (max-width:750px){
+    .menu_list{
+        display: none;
     }
-    .about_container {
-        grid-template-columns: 1fr;
-    }
-    .about_text{
-        text-align: center;
-    }
-    .about_text p{
-        font-size: 0.8rem;
-    }
-    .about_me_img img {
-        min-width: 10rem;
-    }
-    #services{
-        margin-top: 2rem;
-    }
-    .services_container {
-        grid-template-columns: 1fr;
-    }
-    .services_container_2{
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    .services_container .skill_list{
-        font-size: 0.9rem;
-    }
-    .services_left h1 {
-        font-size: 4rem;
-    }
-    .services_container_2 .small_header {
-        font-size: 0.8rem;
-    }
-    
-    .portfolio_container {
-        grid-template-columns: 1fr;
-    }
-    .swiper_slide_container{
-        flex-direction: column;
-        gap: 1rem !important;
-    }
-    .swiper_slide_img {
-        width: 15rem;
-        height: 15rem;
-    }
-    .swiper_slide_info h3 {
-        font-size: 2rem;
-        font-weight: 600;
-    }
-    .testimonials_container{
-        grid-template-columns: 1fr;
-    }
-    .testimonial {
-        padding: 1.5rem;
-    }
-    .testimonial p {
-        font-size: 1rem;
-    }
-    .contact_form_container {
-        grid-template-columns: 1fr;
-    }
-    form{
-        padding: 1rem;  
-    }
-    form .input_row input {
-        width: 100%;
-    }
-    form .input_row textarea {
-        width: 100%;
-    }
-    form .btn{
-        left: 0;
+    .menu_list.active{
+        position: fixed;
+        right: 0;
         top: 0;
-        margin: 2rem auto;
-    }
-}
-
-/* You might do landscape phones here if your content seems to need it */
-@media (min-width: 450px) {
-    .content_title h1{
-        font-size: 2.5rem;
-    }
-    .about_text p{
-        font-size: 1rem;
-    }
-    .about_text .btn{
-        margin: 1rem 0 0 0;
-    }
-    .header_info h2{
-        font-size: 2rem;
-    }
-    .header_info h3{
-        font-size: 1rem;
-    }
-    .header_info p{
-        font-size: 1rem;
-    }
-    .services_card h2{
-        font-size: 2rem;
-    }
-    .services_card p{
-        font-size: 1rem;
-    }
-    #myTeam{
-        height: 100vh;
-    }
-    #myTeam .content_title h1{
-        font-size: 2.5rem;
-    }
-}
-/* Perhaps bigger tablets */
-@media (min-width: 750px) {
-    .container{
-        width: var(--container--mg);
-    }
-    .btn {
-        font-size: 1rem;
-    }
-    .content_title h1 {
-        font-size: 3rem;
-    }
-    .about_container{
-        grid-template-columns: repeat(2,1fr);
-    }
-    .about_text{
-        justify-items: start;
-        text-align: start;
-    }
-    .services_container{
-        position: relative;
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        gap: 2rem;
-    }
-    .services_left{
-        position: relative;
-        display: grid;
-        place-content: center;
-        place-items: start;
-    }
-    #portfolio{
-        min-height: 70vh;
-    }
-    .portfolio_container{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-    }
-    #testimonials{
-        min-height: 70vh;
-    }
-    .testimonials_container{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        gap: 1rem;
-        margin-top: 4rem;
-    }
-    #myTeam .content_title h1 {
-        font-size: 3rem;
-    }
-    .services_card{
-        padding: 1rem;
-    }
-    .swiper_slide_img{
         width: 20rem;
-        height: 20rem;
-    } 
-    #myTeam .content_title h1{
-        font-size: 4rem;
+        height: 100vh;
+        background: var(--color-bg-4);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 3rem;
+        transform: translateX(0);
+        transition: all 1s ease;
+        
     }
-    .swiper_slide_info h3{
-        font-size: 3rem;
-        font-weight: 800;
-      }
-    .swiper_slide_info p {
-        font-size: 1.2rem;
-      }
-    #contact_form{
-        min-height: 50vh;
-        display: grid;
-        place-items: center;
-    }
-}
-@media (min-width: 750px) and (orientation: landscape){
-    #myTeam{
-        height: 120vh;
-    }
-    .swiper_slide_img{
-        width: 15rem;
-        height: 15rem;
-    }
-    .swiper_slide_info h3{
+    #bar{
+        display: block;
+        position: relative;
+        right: 1rem;
         font-size: 2rem;
-        font-weight: 800;
-      }
-    .swiper_slide_info p {
-        font-size: 1rem;
-      }
-}
-
-/* Desktop screen or landscape tablet */
-@media (min-width: 900px) {
-    .swiper_slide_img{
-        width: 30rem;
-        height: 30rem;
-    }
-    .contact_form_container{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-    #contact_form .contact_left{
-        display: grid;
-        place-content: center;
-    }
-    #contact_form .contact_left h2{
-        font-size: 4rem;
-        margin-bottom: 1rem;
-    }
-    #contact_form .contact_left p{
-        line-height: 1.5rem;
-    }
-     .contact_social{
-        justify-content: start;
+        color: var(--color-white);
+        text-shadow: 1px 1px 5px var(--color-black);
     }
 }
-@media (min-width: 900px) and (orientation: landscape) {
-    #myTeam{
-        height: 120vh;
-    }
-}
-
-/* A bit bigger if you need some adjustments around here */
-@media (min-width: 1100px) {
-    .swiper_slide_img{
-        width: 15rem;
-        height: 15rem;
-    }
-}
-/* Widescreens */
-@media (min-width: 1280px) and (orientation: landscape){
-    .swiper_slide_img{
-        width: 25rem;
-        height: 25rem;
-    }
-
-}
-
- 
