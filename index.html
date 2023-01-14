@@ -26,7 +26,7 @@
             <i class="fa-solid fa-bars"></i>
             </div>
             <div class="menu_list">
-                <a href="#"><li>Home</li></a>
+                <a href="#header"><li>Home</li></a>
                 <a href="#"><li>Services</li></a>
                 <a href="#"><li>Portfolio</li></a>
                 <a href="#"><li>Contact</li></a>
@@ -39,8 +39,8 @@
     </nav>
     <!-----------------END NAVBAR--------------------->
     <!-----------------HEADER--------------------->
-    <header>
-        <div class="header_container container">
+    <header id="header">
+        <div class="header_container container slide-in stand-alone">
             <div class="img_container">
             <img src="/img/header_img.png" class="header_img" alt="image">
         </div>
@@ -59,15 +59,15 @@
      <!-----------------END HEADER--------------------->
     <!-----------------ABOUT ME--------------------->
     <section id="about">
-        <div class="content_title">
+        <div class="content_title slide-in stand-alone">
             <h1>About me</h1>
         </div>
         <div class="about_container container">
             <div class="about_me_img slide-in from-left">
-                <img src="img/header_img.png" alt="about image">
+                <img src="img/github/Portfolio-repo/img/about_me_img.jpg" alt="about image">
             </div>
             <div class="about_text slide-in from-right">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ab eveniet dolorum voluptatum maiores eaque quia in ut praesentium, ipsa beatae cum sit quaerat labore autem ipsum sapiente. Amet sequi dolore quae fuga quod dolores numquam tempore ea quis voluptas? Impedit non nemo iure tenetur obcaecati neque minima doloremque totam?</p>
+                <p>Hi, my full name is John Lyl Madrid Auditor. I'm a 21-year-old self-taught frontend developer who started learning programming and web development in July 2021 and has since earned a total of 2 certificates in HTML, CSS, and Javascript. In my three months of coding, I made 4 fully functional responsive websites and learned 1 libraries along the way. I’m currently looking for opportunities to gain experience and expand my skill set in a professional environment.</p>
             <a href="#" class="btn">Download CV</a>
             
             </div>
@@ -76,81 +76,90 @@
     <!-----------------END ABOUT ME--------------------->
     <!-----------------SERVICES--------------------->
      <section id="services">
-        <div class="services_container container">
-            <div class="services_left slide-in from-left">
-                <h3 class="small_header">Results by design</h3>
-                <h1>Design</h1>
-                <ul class="skill_list">
-                    <li>Ux strategy</li>
-                    <li>Product UXUI</li>
-                    <li>Graphic Presentation</li>
-                    <li>Editorial</li>
-                    <li>Brand</li>
-                </ul>
-            </div>
-            <div class="services_right slide-in from-right">
-                <div class="services_card">
-                    <div class="services_card_img">
-                        <img src="img/services_right img.png">
-                    </div>
-                    <div class="services_card_text">
-                        <h2>Design-led</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, praesentium.</p>
-                        <a href="#" class="btn_outline">See our work</a>
-                    </div>
-                </div>
-                <div class="services_card card_grid">
-                    <div class="services_card_text">
-                    <h2>Delivery matters</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, praesentium.</p>
-                    <a href="#" class="btn_outline">Learn more about us</a>
-                </div>
-                    <div class="services_card_img services_card_img_2">
-                        <img src="img/services_right img-2.png">
-                    </div>
-                </div>
-            </div>
-   
+        <div class="content_title slide-in stand-alone">
+            <h1>Services</h1>
         </div>
-        <!-----------SECOND ROW------------->
-        <div class="services_container services_container_2 container">
-            <div class="services_right slide-in from-left">
-                <div class="services_card">
-                    <div class="services_card_img">
-                        <img src="/img/services-reverse_1.png">
-                    </div>
-                    <h2>True collaboration</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, praesentium.</p>
-                    <a href="#" class="btn_outline">See our work</a>
-                </div>
-                <div class="services_card card_grid"> 
-                    <div class="services_card_text">
-                    <h2>Proven expertise</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, praesentium.</p>
-                    <a href="#" class="btn_outline">Learn more about us</a>
-                </div>
-                    <div class="services_card_img services_card_img_2">
-                        <img src="img/services-reverse_2.png">
+        <div class="services_container container">
+            <div class="box slide-in from-left">
+                <div class="content">
+                    <div class="icon"><i class="fa-solid fa-pen"></i></div>
+                    <div class="text_box">
+                        <h3>Designing</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quisquam?</p>
+                        <a href="#" class="btn">Read More</a>
                     </div>
                 </div>
             </div>
-            <div class="services_left slide-in from-right">
-                <h3 class="small_header">Build like nothing else</h3>
-                <h1>Build</h1>
-                <ul class="skill_list">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JAVASCRIPT</li>
-                    <li>BOOTSTRAP</li>
-                </ul>
+            <div class="box slide-in stand-alone">
+                <div class="content">
+                    <div class="icon"><i class="fa-solid fa-code"></i></div>
+                    <div class="text_box">
+                        <h3>Development</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quisquam?</p>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </div>
             </div>
-   
+            <div class="box slide-in from-right">
+                <div class="content">
+                    <div class="icon">
+                        <i class="fa-solid fa-magnifying-glass"></i></div>
+                    <div class="text_box">
+                        <h3>Seo</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quisquam?</p>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </div>
+            </div>
         </div>
      </section>
     <!-----------------END SERVICES--------------------->
+    <!-----------------SKILLS--------------------->
+     <section id="skills">
+        <div class="content_title slide-in stand-alone">
+            <h1>My Skills</h1>
+        </div>
+        <div class="skills_bars_container container slide-in stand-alone">
+            <div class="skill-bars">
+                <div class="bar">
+                  <div class="info">
+                    <span>HTML</span>
+                  </div>
+                  <div class="html show-in">
+                    <span></span>
+                  </div>
+                </div>
+                <div class="bar">
+                  <div class="info">
+                    <span>CSS</span>
+                  </div>
+                  <div class="css show-in">
+                    <span></span>
+                  </div>
+                </div>
+                <div class="bar">
+                  <div class="info">
+                    <span>Javascript</span>
+                  </div>
+                  <div class="jquery show-in">
+                    <span></span>
+                  </div>
+                </div>
+                <div class="bar">
+                  <div class="info">
+                    <span>Bootstrap</span>
+                  </div>
+                  <div class="python show-in">
+                    <span></span>
+                  </div>
+                </div>
+              </div>
+        </div>
+     </section>
+    <!-----------------END SKILLS--------------------->
     <!-----------------PORTFOLIO--------------------->
     <section id="portfolio">
-        <div class="content_title">
+        <div class="content_title slide-in stand-alone">
             <h1>Recent works</h1>
         </div>
         <div class="portfolio_container container">
@@ -187,7 +196,7 @@
     <!-----------------END PORTFOLIO--------------------->
      <!-----------------MY TEAM--------------------->
      <section id="myTeam" class="slide-in from-left">
-        <div class="content_title">
+        <div class="content_title slide-in stand-alone">
             <h1>meet my team</h1>
         </div>
         <!-- Swiper -->
@@ -196,10 +205,10 @@
             <div class="swiper-slide">
                 <div class="swiper_slide_container">
                 <div class="swiper_slide_img">
-                    <img src="img/my team.jpg">
+                    <img src="img/my team1.jpg">
                 </div>
                 <div class="swiper_slide_info">
-                    <h3>Steph</h3>
+                    <h3>Lyl</h3>
                     <p><small>Front end Developer</small></p>
                 </div>
             </div>
@@ -210,7 +219,7 @@
                     <img src="img/2 team.jpeg">
                 </div>
                 <div class="swiper_slide_info">
-                    <h3>Venz</h3>
+                    <h3>Ericka</h3>
                     <p><small>Back end Developer</small></p>
                 </div>
             </div>
@@ -233,7 +242,7 @@
                     <img src="img/4 team.webp">
                 </div>
                 <div class="swiper_slide_info">
-                    <h3>Venz</h3>
+                    <h3>John Doe</h3>
                     <p><small>Back end Developer</small></p>
                 </div>
             </div>
@@ -246,7 +255,7 @@
 
     <!-----------------TESTIMONIALS--------------------->
     <section id="testimonials">
-        <div class="content_title">
+        <div class="content_title slide-in stand-alone">
             <h1>testimonial</h1>
         </div>
         <div class="testimonials_container container">

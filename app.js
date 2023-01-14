@@ -32,6 +32,7 @@ closeBar.addEventListener("click", ()=>{
 
 //Intersection observer
 const sliders = document.querySelectorAll(".slide-in");
+const showIn = document.querySelectorAll(".show-in");
 console.log(sliders);
 const appearOptions = {
   threshold: 0,
@@ -51,3 +52,23 @@ const appearOnScroll = new IntersectionObserver(entries =>{
 sliders.forEach(slider =>{
   appearOnScroll.observe(slider);
 })
+//progress-line 
+const progressLineOptions = {
+  threshold: 0,
+  rootMargin: "0px 0px -100px 0px" 
+}
+
+const progressOnScroll = new IntersectionObserver(entries =>{
+  entries.forEach(entry =>{
+    if(!entry.isIntersecting){
+      return;
+    }
+    else{
+      entry.target.classList.add("progress-line");
+    }
+  })
+},progressLineOptions);
+showIn.forEach(show =>{
+  progressOnScroll.observe(show);
+})
+
