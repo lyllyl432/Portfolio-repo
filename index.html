@@ -17,6 +17,9 @@
 </head>
 <body>
      <!-----------------NAVBAR--------------------->
+     <a class="scroll-link top-link" href="#header">
+        <i class="fas fa-arrow-up"></i>
+      </a> 
     <nav>
         <div class="nav_container container">
             <div id="logo">
@@ -26,10 +29,11 @@
             <i class="fa-solid fa-bars"></i>
             </div>
             <div class="menu_list">
-                <a href="#header"><li>Home</li></a>
-                <a href="#"><li>Services</li></a>
-                <a href="#"><li>Portfolio</li></a>
-                <a href="#"><li>Contact</li></a>
+                <a href="#header" class="scroll-link"><li>Home</li></a>
+                <a href="#about" class="scroll-link"><li>About</li></a>
+                <a href="#services" class="scroll-link"><li>Services</li></a>
+                <a href="#portfolio" class="scroll-link"><li>Portfolio</li></a>
+                <a href="#contact_form" class="scroll-link"><li>Contact</li></a>
                 <a href="#" class="btn btn_primary"><li>Resume</li></a>
                 <div id="close_bar">
                     <i class="fa-solid fa-xmark"></i>
@@ -45,9 +49,12 @@
             <img src="/img/header_img.png" class="header_img" alt="image">
         </div>
             <div class="header_info">
-            <h2>John Lyl Auditor</h2>
-            <h3>Developer and Designer</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, recusandae.</p>
+                <h2>Hello 👋 I'm</h2>
+                <section class="animation">
+                  <div class="first"><div>John Lyl Auditor</div></div>
+                  <div class="second"><div>Web Developer</div></div>
+                  <div class="third"><div>Systems Engineer</div></div>
+                </section>
         </div>
         <ul class="contact_social">
             <a href=""><li><i class="fa-brands fa-facebook"></i></li></a>
@@ -64,7 +71,7 @@
         </div>
         <div class="about_container container">
             <div class="about_me_img slide-in from-left">
-                <img src="img/github/Portfolio-repo/img/about_me_img.jpg" alt="about image">
+                <img src="img/about_img.jpg" alt="about image">
             </div>
             <div class="about_text slide-in from-right">
                 <p>Hi, my full name is John Lyl Madrid Auditor. I'm a 21-year-old self-taught frontend developer who started learning programming and web development in July 2021 and has since earned a total of 2 certificates in HTML, CSS, and Javascript. In my three months of coding, I made 4 fully functional responsive websites and learned 1 libraries along the way. I’m currently looking for opportunities to gain experience and expand my skill set in a professional environment.</p>
@@ -80,7 +87,7 @@
             <h1>Services</h1>
         </div>
         <div class="services_container container">
-            <div class="box slide-in from-left">
+            <div class="box slide-in stand-alone">
                 <div class="content">
                     <div class="icon"><i class="fa-solid fa-pen"></i></div>
                     <div class="text_box">
@@ -100,7 +107,7 @@
                     </div>
                 </div>
             </div>
-            <div class="box slide-in from-right">
+            <div class="box slide-in stand-alone">
                 <div class="content">
                     <div class="icon">
                         <i class="fa-solid fa-magnifying-glass"></i></div>
@@ -165,29 +172,54 @@
         <div class="portfolio_container container">
             <div class="porfolio_project slide-in from-left">
                 <div class="portfolio_image">
-                    <img src="img/2.webp">
+                    <img src="img/recent-work1.png">
+                </div>
+                <div class="portfolio_info">
+                    <p>An inspired design from Mayweather Boxing GYM. My first project using Vanilla Javascript.</p>
+                    <p><span>Used: HTML/CSS/JS</span></p>    
                 </div>
                 <div class="portfolio_cta">
-                    <a href="#" class="btn">github</a>
-                    <a href="#" class="btn btn_outline">netlify</a>
+                    <a href="https://github.com/lyllyl432/MAYWEATHER-WEBSITE" class="btn">github</a>
+                    <a href="https://guileless-sunburst-51d86c.netlify.app/" class="btn btn_outline">netlify</a>
                 </div>
             </div>
             <div class="porfolio_project  slide-in from-left">
                 <div class="portfolio_image">
-                    <img src="img/2.webp">
+                    <img src="img/recent-work2.png">
+                </div>
+                <div class="portfolio_info">
+                    <p>I have made some webpages for the Talisalites. This is my first project utilizing the Bootstrap framework, and I'm still learning it.</p>
+                    <p><span>Used: HTML/CSS/BOOTSTRAP/JS</span> </p> 
                 </div>
                 <div class="portfolio_cta">
-                    <a href="#" class="btn">github</a>
-                    <a href="#" class="btn btn_outline">netlify</a>
+                    <a href="https://github.com/lyllyl432/Talisay-repo" class="btn">github</a>
+                    <a href="https://jolly-khapse-161fee.netlify.app/" class="btn btn_outline">netlify</a>
                 </div>
             </div>
             <div class="porfolio_project  slide-in from-right">
                 <div class="portfolio_image">
-                    <img src="img/2.webp">
+                    <img src="img/recent-work3.png">
+                </div>
+                <div class="portfolio_info">
+                    <p>I also implemented all of the learnings in terms of Basic Data Structures, where I used the array and object learnings. This program remembers all of your carts by just hitting the add cart button.</p>
+                    <p><span>Used: HTML/CSS/BOOTSTRAP/JS</span></p>    
                 </div>
                 <div class="portfolio_cta">
-                    <a href="#" class="btn">github</a>
-                    <a href="#" class="btn btn_outline">netlify</a>
+                    <a href="https://github.com/lyllyl432/ADD-TO-CART1" class="btn">github</a>
+                    <a href="https://gentle-treacle-d48a06.netlify.app/" class="btn btn_outline">netlify</a>
+                </div>
+            </div>
+            <div class="porfolio_project  slide-in from-right">
+                <div class="portfolio_image">
+                    <img src="img/recent-work4.png">
+                </div>
+                <div class="portfolio_info">
+                    <p>A basic to-do list that recalls all of the tasks that I would do in a productive day. It's my first attempt at Vanilla Javascript.</p>
+                    <p><span>HTML/CSS/BOOTSTRAP/JS</span></p>    
+                </div>
+                <div class="portfolio_cta">
+                    <a href="https://github.com/lyllyl432/todolist-repo" class="btn">github</a>
+                    <a href="https://stupendous-marigold-a54f7f.netlify.app/" class="btn btn_outline">netlify</a>
                 </div>
             </div>
             
@@ -364,6 +396,62 @@
         </form>
     </div>
     </section>
+    <!----------------FOOTER---------------------->
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+
+            <h3>DevelopedByLyl</h3>
+
+            <p class="footer-links">
+                <a href="#" class="link-1">Home</a>
+                
+                <a href="#">About</a>
+            
+                <a href="#">Services</a>
+            
+                <a href="#">Portfolio</a>
+                
+                <a href="#">Contact</a>
+                
+                <a href="#">Resume</a>
+            </p>
+
+            <p class="footer-company-name">DevelopedByLyl © 2023</p>
+        </div>
+
+        <div class="footer-center">
+
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>Lipata</span> Minglanilla, Cebu</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+1.555.555.5555</p>
+            </div>
+
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:support@company.com">lyllyl432@gmail.com</a></p>
+            </div>
+
+        </div>
+
+        <div class="footer-right">
+            <div class="footer-icons">
+                <ul class="contact_social">
+                    <a href=""><li><i class="fa-brands fa-facebook"></i></li></a>
+                    <a href=""><li><i class="fa-brands fa-github"></i></li></a>
+                    <a href=""><li><i class="fa-brands fa-instagram"></i></li></a>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </footer>
     <!-----------------END CONTACT FORM--------------------->
  <!-----------------SWIPER JS--------------------->
  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
